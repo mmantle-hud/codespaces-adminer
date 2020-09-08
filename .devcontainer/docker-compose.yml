@@ -34,8 +34,8 @@ services:
       MYSQL_PASSWORD: 123
     ports:
       - "81:80"
-    volumes:
-      - /sessions
+  #  volumes:
+  #    - /sessions
   #    - ${PHP_INI-./config/php/php.ini}:/usr/local/etc/php/conf.d/php-phpmyadmin.ini
   #  stdin_open: true
   #  tty: true
