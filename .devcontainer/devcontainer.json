@@ -2,8 +2,8 @@
 	"name":"Docker compose test",
 	"dockerComposeFile":["docker-compose.yml"],
 	"service":"web",
-	"runServices":["database","web"],
+	"runServices":["database","web","phpmyadmin"],
 	"workspaceFolder":"/var/www/html",
-	"forwardPorts": [80, 3306],
+	"forwardPorts": [80, 3306, 81],
 	"postStartCommand": "service apache2 start",
 }
