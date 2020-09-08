@@ -16,7 +16,7 @@ services:
     depends_on:
       - database
     volumes:
-      - ../src:/var/www/html/
+      - ../src:/var/www/html
       - ./php.ini:/usr/local/etc/php/conf.d/php-docker.ini
-    ports:
-      - "80:80"
+    #ports:
+    #  - "80:80"
